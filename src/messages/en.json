@@ -99,6 +99,7 @@
   "language": {
     "en": "English",
     "fr": "Français",
-    "sw": "Kiswahili"
+    "sw": "Kiswahili",
+    "select": "Select language"
   }
 }
