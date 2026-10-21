@@ -316,7 +316,11 @@ export async function invalidateVouchers(voucherId?: string): Promise<void> {
   await globalMutate(
     (key) =>
       Array.isArray(key) &&
-      (key[0] === 'vouchers' || key[0] === 'receipts' || key[0] === 'voucher' || key[0] === 'voucher-events'),
+      (key[0] === 'vouchers' ||
+        key[0] === 'receipts' ||
+        key[0] === 'voucher' ||
+        key[0] === 'voucher-events' ||
+        key[0] === 'wallet-events'),
   );
 }
 
